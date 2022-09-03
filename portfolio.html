@@ -20,7 +20,8 @@
                 margin: 0 auto;
                 margin-bottom: 20px;
                 display: flex;
-                padding: 8px;
+                border: 2px rgb(71, 73, 73) solid;
+                padding: 2px;
             }
             h1 {
                 display: flex;
@@ -32,13 +33,16 @@
             #nav-ul {
                 list-style-image: none;
             }
-            .nav-li {
+            .nav-li, .nav-a {
                 display: inline-block;
                 padding: 0 10px;
+                color:rgb(255, 255, 255);
+                font-family: arial;
             }
             a {
                 text-decoration: none;
-                color: rgb(255, 255, 255);
+                color: rgb(45, 45, 45);
+                font-family: arial
             }
          
             /* main container area beneath menu */
@@ -56,47 +60,42 @@
             .content {
                 flex: 1;
                 padding: 15px;
+                color:rgb(45,45,45);
             }
             #text {
                 border: 7px rgb(53, 102, 102) ridge;
                 padding: 8px;
+                color:rgb(45,45,45);
+
             }
-            h2, h3 {
-                margin: 0px;
+            #portfolio {
+                color:rgb(45,45,45);
             }
-            #image {
-                border: 4px rgb(53, 102, 102) ridge;
-                padding: 0px;
-            }
-            #nav {
-                border: 2px rgb(71, 73, 73) solid;
-                padding: 2px;
-            }  
         </style>
     </head>
     <body>
-      <div id="all-contents">
-        <nav>
-            <h1>Bennett's Epic Website</h1>
-            <ul id="nav-ul">
-               <li class="nav-li">
-               <a class="nav-a" href="index.html">Home</a>
-             </li>
-             <li class="nav-li">
-               <a class="nav-a" href="portfolio.html">Portfolio</a>
-             </li>
-         </ul>
-        </nav>
-        <main id="text">
-          <div class="content">
-            <h1>Portfolio</h1>
-                <ul id="portfolio">
-                  <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
-                  <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
-                  <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and velocity applied to circle shapes...</a></li>
-                </ul>
-          </div>
-        </main>
-      </div>
+        <div id="all-contents">
+            <nav>
+                <h1>Bennett's Epic Website</h1>
+                <ul id="nav-ul">
+                <li class="nav-li">
+                <a class="nav-a" href="index.html">Home</a>
+                </li>
+                <li class="nav-li">
+                <a class="nav-a" href="portfolio.html">Portfolio</a>
+                </li>
+            </ul>
+            </nav>
+            <main id="text">
+            <div class="content">
+                <h2>Portfolio</h1>
+                    <ul id="portfolio">
+                    <li><a href="projects/platformer/">Platformer : A cannon - dodging, collectible - grabbing adventure game for Halleb0t</a></li>
+                    <li><a href="projects/bouncing-box/">Bouncing Box : A project that gives you a taste of game development on the web </a></li>
+                    <li><a href="projects/circularity/">Circularity : A motion poem using random number generation and velocity applied to circle shapes...</a></li>
+                    </ul>
+            </div>
+            </main>
+        </div>
     </body>
 </html>
