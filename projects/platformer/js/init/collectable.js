@@ -34,13 +34,15 @@
    */
   function init(game) {
     let createCollectable = collectable.create;
+   
 
     ////////////////////////////////////////////////////////////////////////
     // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
 
     // example:
-    createCollectable(type.steve, 200, 170, 6, 0.7);
-
+    createCollectable(type.max, 200, 170, 6, 0.7);
+    createCollectable(type.db, 100, 450, 1, 1);
+    createCollectable(type.kennedi, 620, 150, 0);
     // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////
   }
