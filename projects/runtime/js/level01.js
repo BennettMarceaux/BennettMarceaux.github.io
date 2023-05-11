@@ -107,7 +107,29 @@ var level01 = function (window) {
         
         }
 
-        createReward(1600, groundY - 10);
+        createReward(1000, groundY - 10);
+
+        function createMarker(x,y) {
+            var enemy = game.createGameItem("marker", 25);
+            var redSquare = draw.rect(50, 50, "white");
+            redSquare.x = -25;
+            redSquare.y = -25;
+            enemy.addChild(redSquare);
+            enemy.x = x
+            enemy.y = y
+            game.addGameItem(enemy);
+            enemy.velocityX = -1
+            enemy.rotationalVelocity = -1 * Math.random();
+            enemy.onPlayerCollision = function () {
+                startLevel()
+            };
+            enemy.onProjectileCollision = function () {
+                startLevel()
+            };
+        }
+        createMarker(1600, groundY - 30);
+
+
         // DO NOT EDIT CODE BELOW HERE
     }
 };
